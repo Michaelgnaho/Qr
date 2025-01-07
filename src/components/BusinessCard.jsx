@@ -76,7 +76,7 @@ const BusinessCard = () => {
   };
 
   return (
-    <div className="min-h-screen text-black bg-gray-100 py-8 px-4">
+    <div className="min-h-screen max-w-screen text-black bg-gray-100 py-8 px-4">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-8">
           <div className="flex flex-col items-center">
