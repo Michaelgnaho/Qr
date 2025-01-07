@@ -80,54 +80,54 @@ const BusinessCard = () => {
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-8">
           <div className="flex flex-col items-center">
-            <div className="max-w-md mx-auto bg-purple-700 p-8 rounded-lg shadow-lg text-white text-center items-center justify-center">
+            <div className="max-w-md w-full mx-auto bg-purple-700 p-8 rounded-lg shadow-lg text-white text-center">
               <img src={userData.profilePic} alt={userData.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
               <h1 className="text-2xl font-bold">{userData.name}</h1> 
               <h2 className="text-xl">({userData.nickname})</h2>
-              <p className="mt-4">
+              <p className="mt-4 flex flex-wrap justify-center gap-2">
                 {userData.professions.map((profession, index) => (
                   <span
                     key={index}
-                    className="text-white px-3 py-1 rounded-full text-sm"
+                    className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm"
                   >
                     {profession}
                   </span>
                 ))}
               </p>
-             
-<div className="mt-8 grid grid-cols-4 gap-4 px-4">
-  <a 
-    href={`tel:${userData.phone}`} 
-    className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-  >
-    <FaPhone className="text-white text-xl mb-1" />
-    <p className="text-white text-sm font-medium">CALL</p>
-  </a>
-  <a 
-    href={`mailto:${userData.email}`} 
-    className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-  >
-    <FaEnvelope className="text-white text-xl mb-1" />
-    <p className="text-white text-sm font-medium">EMAIL</p>
-  </a>
-  <button 
-    onClick={handleSave} 
-    className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-  >
-    <FaSave className="text-white text-xl mb-1" />
-    <p className="text-white text-sm font-medium">SAVE</p>
-  </button>
-  <button 
-    onClick={handleShare} 
-    className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-  >
-    <FaShare className="text-white text-xl mb-1" />
-    <p className="text-white text-sm font-medium">SHARE</p>
-  </button>
-</div>
+              
+              <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 px-4">
+                <a 
+                  href={`tel:${userData.phone}`} 
+                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
+                >
+                  <FaPhone className="text-white text-xl mb-1" />
+                  <p className="text-white text-sm font-medium">CALL</p>
+                </a>
+                <a 
+                  href={`mailto:${userData.email}`} 
+                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
+                >
+                  <FaEnvelope className="text-white text-xl mb-1" />
+                  <p className="text-white text-sm font-medium">EMAIL</p>
+                </a>
+                <button 
+                  onClick={handleSave} 
+                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
+                >
+                  <FaSave className="text-white text-xl mb-1" />
+                  <p className="text-white text-sm font-medium">SAVE</p>
+                </button>
+                <button 
+                  onClick={handleShare} 
+                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
+                >
+                  <FaShare className="text-white text-xl mb-1" />
+                  <p className="text-white text-sm font-medium">SHARE</p>
+                </button>
+              </div>
             </div>
           </div>
-
+  
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">About Me</h2>
             <hr className="border-gray-300 mb-4" />
@@ -135,7 +135,7 @@ const BusinessCard = () => {
               {userData.summary}
             </p>
           </div>
-
+  
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Contact Information</h2>
             <hr className="border-gray-300 mb-4" />
@@ -160,7 +160,7 @@ const BusinessCard = () => {
               </div>
             </div>
           </div>
-
+  
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Companies & Positions</h2>
             <hr className="border-gray-300 mb-4" />
@@ -173,7 +173,7 @@ const BusinessCard = () => {
               ))}
             </ul>
           </div>
-
+  
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Expertise</h2>
             <hr className="border-gray-300 mb-4" />
@@ -188,7 +188,7 @@ const BusinessCard = () => {
               ))}
             </div>
           </div>
-
+  
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Social Media</h2>
             <hr className="border-gray-300 mb-4" />
@@ -205,9 +205,6 @@ const BusinessCard = () => {
               <a href={userData.social.twitter} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaTwitter className="text-3xl text-blue-400 hover:text-blue-500" />
               </a>
-              <a href={userData.social.website} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                <FaGlobe className="text-3xl text-blue-400 hover:text-blue-500" />
-              </a>
               <a href={userData.social.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaGithub className="text-3xl text-blue-400 hover:text-blue-500" />
               </a>
@@ -217,6 +214,7 @@ const BusinessCard = () => {
       </div>
     </div>
   );
+  
 };
 
 export default BusinessCard;
