@@ -5,7 +5,7 @@ import { QRCodeSVG } from 'qrcode.react';
 
 const QRGenerator = () => {
   const [username, setUsername] = useState('');
-  const baseUrl = 'https://yourdomain.com/card/';
+  const baseUrl = 'https://qr-plum-pi.vercel.app/card/';
 
   return (
     <div className="max-w-md mx-auto p-6">
