@@ -1,5 +1,7 @@
 // Import the image properly
 import AduniPic from "../assets/comfor_olafare.jpeg";
+import mag from "../assets/mag.jpg";
+
 
 export const users = {
   'TheAdunni': {
@@ -40,7 +42,7 @@ export const users = {
     email: "gnahomichael@gmail.com",
     address: "Lagos, Nigeria",
     summary: "A software engineer with a balanced expertise of 60% frontend and 40% backend development. Proficient in creating responsive and user-friendly websites using modern frameworks like React, TailwindCSS, and Bootstrap, and experienced in backend technologies such as Node.js and Django for building robust, scalable server-side applications. Skilled in multiple programming languages, including JavaScript, Python, and C, and adept at developing mobile applications using React Native. Focused on writing clean, efficient, and maintainable code across the entire stack, with experience in both small business websites and large-scale applications.",
-    profilePic: "your_profile_picture_path", // Replace with your actual profile picture path
+    profilePic: mag, // Replace with your actual profile picture path
     companies: [
       "Freelance SofTware Developer",
       "Contributor to various open-source projects"

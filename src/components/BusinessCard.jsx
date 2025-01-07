@@ -207,6 +207,11 @@ const BusinessCard = () => {
               </a>
               <a href={userData.social.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaGithub className="text-3xl text-blue-400 hover:text-blue-500" />
+
+              </a>
+              <a href={userData.social.website} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+                <FaGlobe className="text-3xl text-blue-400 hover:text-blue-500" />
+                
               </a>
             </div>
           </div>
