@@ -76,9 +76,9 @@ const BusinessCard = () => {
   };
 
   return (
-    <div className="min-h-screen max-w-screen text-black bg-gray-100 py-8 px-4">
+    <div className="min-h-screen max-w-screen text-black bg-gray-100 py-3 px-4">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="p-8">
+        <div className="p-3">
           <div className="flex flex-col items-center">
             <div className="max-w-md w-full mx-auto bg-purple-700 p-8 rounded-lg shadow-lg text-white text-center">
               <img src={userData.profilePic} alt={userData.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
