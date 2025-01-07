@@ -81,77 +81,57 @@ const BusinessCard = () => {
         <div className="p-3">
           <div className="flex flex-col items-center">
             <div className="max-w-md w-full mx-auto bg-purple-700 p-8 rounded-lg shadow-lg text-white text-center">
-              <img src={userData.profilePic} alt={userData.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
-              <h1 className="text-2xl font-bold">{userData.name}</h1> 
-              <h2 className="text-xl">({userData.nickname})</h2>
-              <p className="mt-4 flex flex-wrap justify-center  gap-1">
+              <img src={userData.profilePic} alt={userData.name} className="w-24 h-24 sm:w-16 sm:h-16 rounded-full mx-auto mb-4" />
+              <h1 className="text-2xl sm:text-xl font-bold">{userData.name}</h1> 
+              <h2 className="text-xl sm:text-lg">({userData.nickname})</h2>
+              <p className="mt-4 flex flex-wrap justify-center gap-1">
                 {userData.professions.map((profession, index) => (
-                  <span
-                    key={index}
-                    className="bg-purple-600 text-white px-1 py-1 rounded-full text-sm"
-                  >
+                  <span key={index} className="bg-purple-600 text-white px-2 py-1 rounded-full text-sm">
                     {profession}
                   </span>
                 ))}
               </p>
-              
               <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 px-4">
-                <a 
-                  href={`tel:${userData.phone}`} 
-                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-                >
+                <a href={`tel:${userData.phone}`} className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md">
                   <FaPhone className="text-white text-xl mb-1" />
                   <p className="text-white text-sm font-medium">CALL</p>
                 </a>
-                <a 
-                  href={`mailto:${userData.email}`} 
-                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-                >
+                <a href={`mailto:${userData.email}`} className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md">
                   <FaEnvelope className="text-white text-xl mb-1" />
                   <p className="text-white text-sm font-medium">EMAIL</p>
                 </a>
-                <button 
-                  onClick={handleSave} 
-                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-                >
+                <button onClick={handleSave} className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md">
                   <FaSave className="text-white text-xl mb-1" />
                   <p className="text-white text-sm font-medium">SAVE</p>
                 </button>
-                <button 
-                  onClick={handleShare} 
-                  className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md"
-                >
+                <button onClick={handleShare} className="flex flex-col items-center p-3 rounded-lg bg-purple-600 hover:bg-purple-700 transform hover:scale-105 transition-all duration-200 shadow-md">
                   <FaShare className="text-white text-xl mb-1" />
                   <p className="text-white text-sm font-medium">SHARE</p>
                 </button>
               </div>
             </div>
           </div>
-  
+
           <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">About Me</h2>
+            <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">About Me</h2>
             <hr className="border-gray-300 mb-4" />
-            <p className='text-gray-700 text-center text-lg'>
+            <p className="text-gray-700 text-center text-lg sm:text-sm">
               {userData.summary}
             </p>
           </div>
-  
+
           <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Contact Information</h2>
+            <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">Contact Information</h2>
             <hr className="border-gray-300 mb-4" />
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <FaPhone className="text-purple-700" />
-                <a href={`tel:${userData.phone}`} className="text-gray-700 hover:underline">
-                  Phone: {userData.phone}
-                </a>
+                <a href={`tel:${userData.phone}`} className="text-gray-700 hover:underline">Phone: {userData.phone}</a>
               </div>
               <hr className="border-gray-200" />
               <div className="flex items-center space-x-2">
                 <FaEnvelope className="text-purple-700" />
-                <a href={`mailto:${userData.email}`} className="text-gray-700 hover:underline">
-                  Email: {userData.email}
-                </a>
+                <a href={`mailto:${userData.email}`} className="text-gray-700 hover:underline">Email: {userData.email}</a>
               </div>
               <hr className="border-gray-200" />
               <div className="flex items-center space-x-2">
@@ -160,9 +140,9 @@ const BusinessCard = () => {
               </div>
             </div>
           </div>
-  
+
           <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Companies & Positions</h2>
+            <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">Companies & Positions</h2>
             <hr className="border-gray-300 mb-4" />
             <ul className="mt-2 space-y-3">
               {userData.companies.map((company, index) => (
@@ -173,24 +153,21 @@ const BusinessCard = () => {
               ))}
             </ul>
           </div>
-  
+
           <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Expertise</h2>
+            <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">Expertise</h2>
             <hr className="border-gray-300 mb-4" />
             <div className="mt-2 flex flex-wrap gap-2 justify-center">
               {userData.professions.map((profession, index) => (
-                <span
-                  key={index}
-                  className="bg-purple-100 px-4 py-2 rounded-full text-sm text-purple-700 font-medium"
-                >
+                <span key={index} className="bg-purple-100 px-4 py-2 rounded-full text-sm text-purple-700 font-medium">
                   {profession}
                 </span>
               ))}
             </div>
           </div>
-  
+
           <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4 text-center text-purple-700">Social Media</h2>
+            <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">Social Media</h2>
             <hr className="border-gray-300 mb-4" />
             <div className="flex justify-center space-x-8">
               <a href={userData.social.instagram} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
@@ -207,11 +184,9 @@ const BusinessCard = () => {
               </a>
               <a href={userData.social.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaGithub className="text-3xl text-blue-400 hover:text-blue-500" />
-
               </a>
               <a href={userData.social.website} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaGlobe className="text-3xl text-blue-400 hover:text-blue-500" />
-                
               </a>
             </div>
           </div>
