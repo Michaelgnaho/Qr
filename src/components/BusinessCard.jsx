@@ -84,11 +84,11 @@ const BusinessCard = () => {
               <img src={userData.profilePic} alt={userData.name} className="w-24 h-24 rounded-full mx-auto mb-4" />
               <h1 className="text-2xl font-bold">{userData.name}</h1> 
               <h2 className="text-xl">({userData.nickname})</h2>
-              <p className="mt-4 flex flex-wrap justify-center gap-2">
+              <p className="mt-4 flex flex-wrap justify-center  gap-1">
                 {userData.professions.map((profession, index) => (
                   <span
                     key={index}
-                    className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm"
+                    className="bg-purple-600 text-white px-1 py-1 rounded-full text-sm"
                   >
                     {profession}
                   </span>
