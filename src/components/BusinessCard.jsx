@@ -169,7 +169,7 @@ const BusinessCard = () => {
           <div className="mt-8">
             <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">Social Media</h2>
             <hr className="border-gray-300 mb-4" />
-            <div className="flex justify-center space-x-8">
+            <div className="flex flex-wrap justify-center space-x-8">
               <a href={userData.social.instagram} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaInstagram className="text-3xl text-pink-500 hover:text-pink-600" />
               </a>
