@@ -169,7 +169,7 @@ const BusinessCard = () => {
           <div className="mt-8">
             <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">Social Media</h2>
             <hr className="border-gray-300 mb-4" />
-            <div className="flex flex-wrap justify-center space-x-8">
+            <div className="flex flex-wrap justify-center space-x-8 gap-2">
               <a href={userData.social.instagram} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaInstagram className="text-3xl text-pink-500 hover:text-pink-600" />
               </a>
@@ -182,12 +182,14 @@ const BusinessCard = () => {
               <a href={userData.social.twitter} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaTwitter className="text-3xl text-blue-400 hover:text-blue-500" />
               </a>
-              <a href={userData.social.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+
+            { userData.social.github && <a href={userData.social.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaGithub className="text-3xl text-blue-400 hover:text-blue-500" />
-              </a>
-              <a href={userData.social.website} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+              </a>}
+
+              {userData.social.websit && <a href={userData.social.website} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
                 <FaGlobe className="text-3xl text-blue-400 hover:text-blue-500" />
-              </a>
+              </a>}
             </div>
           </div>
         </div>
