@@ -1,3 +1,92 @@
+// import React from 'react'; 
+// import { useParams } from 'react-router-dom';
+// import { users } from './data';
+// import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaGlobe, FaGithub, FaShare, FaSave } from 'react-icons/fa';
+
+// const BusinessCard = () => {
+//   const { username } = useParams();
+//   const userData = users[username];
+
+//   if (!userData) {
+//     return <div className="text-center p-8"> User not found </div>;
+//   }
+
+//   const handleShare = async () => {
+//     if (navigator.share) {
+//       try {
+//         await navigator.share({
+//           title: userData.name,
+//           text: `Check out ${userData.name}'s business card`,
+//           url: window.location.href
+//         });
+//       } catch (error) {
+//         console.error('Error sharing:', error);
+//       }
+//     } else {
+//       navigator.clipboard.writeText(window.location.href);
+//       alert('Link copied to clipboard!');
+//     }
+//   };
+
+//   const handleSave = async () => {
+//     const displayName = `Scan to know ${username} - ${userData.name}`;
+    
+//     const contact = {
+//       name: [displayName],
+//       tel: [userData.phone],
+//       email: [userData.email],
+//       address: [userData.address],
+//       url: Object.values(userData.social)
+//     };
+  
+//     try {
+//       if ('contacts' in navigator && 'ContactsManager' in window) {
+//         const props = ['name', 'tel', 'email', 'address', 'url'];
+//         const supported = await navigator.contacts.getProperties();
+//         if (supported.length > 0) {
+//           await navigator.contacts.select(props);
+//           const handles = await navigator.contacts.select(props);
+//           await handles[0].setContactInfo(contact);
+//           alert('Contact saved successfully!');
+//           return;
+//         }
+//       }
+//       throw new Error('Contact API not supported');
+//     } catch (error) {
+//       const vCardData = `BEGIN:VCARD
+//   VERSION:3.0
+//   N:${displayName};;;;
+//   FN:${displayName}
+//   TEL:${userData.phone}
+//   EMAIL:${userData.email}
+//   ADR:;;${userData.address}
+//   URL:${userData.social.website}
+//   NOTE:${userData.summary}
+//   END:VCARD`;
+  
+//       const blob = new Blob([vCardData], { type: 'text/vcard' });
+//       const url = window.URL.createObjectURL(blob);
+//       const link = document.createElement('a');
+//       link.href = url;
+//       link.setAttribute('download', `${displayName}.vcf`);
+//       document.body.appendChild(link);
+//       link.click();
+//       document.body.removeChild(link);
+//     }
+//   };
+
+//   return (
+//     <div className="min-h-screen max-w-screen text-black bg-gray-100 py-3 px-4">
+      
+//     </div>
+//   );
+  
+// };
+
+// export default BusinessCard;
+
+
+
 import React from 'react'; 
 import { useParams } from 'react-router-dom';
 import { users } from './data';
@@ -29,21 +118,37 @@ const BusinessCard = () => {
   };
 
   const handleSave = async () => {
-    const displayName = `Scan to know ${username} - ${userData.name}`;
+    const displayName = `${userData.name} - ${userData.nickname}`;
     
-    const contact = {
-      name: [displayName],
-      tel: [userData.phone],
-      email: [userData.email],
-      address: [userData.address],
-      url: Object.values(userData.social)
-    };
-  
+    // Create a formatted string of social media URLs
+    const socialUrls = Object.entries(userData.social)
+      .filter(([_, value]) => value) // Filter out empty values
+      .map(([_, value]) => value)
+      .join('\n');
+
+    // Create a formatted string of professions
+    const professionsStr = Array.isArray(userData.professions) 
+      ? userData.professions.join(', ')
+      : '';
+
+    // Create a formatted string of companies
+    const companiesStr = Array.isArray(userData.companies)
+      ? userData.companies.join(', ')
+      : '';
+    
     try {
       if ('contacts' in navigator && 'ContactsManager' in window) {
         const props = ['name', 'tel', 'email', 'address', 'url'];
         const supported = await navigator.contacts.getProperties();
         if (supported.length > 0) {
+          const contact = {
+            name: [displayName],
+            tel: [userData.phone],
+            email: [userData.email],
+            address: [userData.address],
+            url: Object.values(userData.social).filter(Boolean)
+          };
+          
           await navigator.contacts.select(props);
           const handles = await navigator.contacts.select(props);
           await handles[0].setContactInfo(contact);
@@ -51,19 +156,20 @@ const BusinessCard = () => {
           return;
         }
       }
-      throw new Error('Contact API not supported');
-    } catch (error) {
+      
+      // If Contacts API is not supported, fall back to vCard
       const vCardData = `BEGIN:VCARD
-  VERSION:3.0
-  N:${displayName};;;;
-  FN:${displayName}
-  TEL:${userData.phone}
-  EMAIL:${userData.email}
-  ADR:;;${userData.address}
-  URL:${userData.social.website}
-  NOTE:${userData.summary}
-  END:VCARD`;
-  
+VERSION:3.0
+FN:${displayName}
+N:${userData.name};;;;
+NICKNAME:${userData.nickname}
+TEL:${userData.phone}
+EMAIL:${userData.email}
+ADR:;;${userData.address}
+NOTE:${userData.summary}\n\nProfessions: ${professionsStr}\nCompanies: ${companiesStr}
+URL:${socialUrls}
+END:VCARD`;
+      
       const blob = new Blob([vCardData], { type: 'text/vcard' });
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
@@ -72,9 +178,14 @@ const BusinessCard = () => {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error saving contact:', error);
+      alert('There was an error saving the contact. Please try again.');
     }
   };
 
+  // Rest of the component remains the same...
   return (
     <div className="min-h-screen max-w-screen text-black bg-gray-100 py-3 px-4">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
@@ -170,33 +281,43 @@ const BusinessCard = () => {
             <h2 className="text-xl sm:text-lg font-semibold mb-4 text-center text-purple-700">Social Media</h2>
             <hr className="border-gray-300 mb-4" />
             <div className="flex flex-wrap justify-center space-x-8 gap-2">
-              <a href={userData.social.instagram} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                <FaInstagram className="text-3xl text-pink-500 hover:text-pink-600" />
-              </a>
-              <a href={userData.social.linkedin} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                <FaLinkedin className="text-3xl text-blue-600 hover:text-blue-700" />
-              </a>
-              <a href={userData.social.facebook} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                <FaFacebook className="text-3xl text-blue-500 hover:text-blue-600" />
-              </a>
-              <a href={userData.social.twitter} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                <FaTwitter className="text-3xl text-blue-400 hover:text-blue-500" />
-              </a>
+            {userData.social.instagram && (
+  <a href={userData.social.instagram} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <FaInstagram className="text-3xl text-pink-500 hover:text-pink-600" />
+  </a>
+)}
+{userData.social.linkedin && (
+  <a href={userData.social.linkedin} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <FaLinkedin className="text-3xl text-blue-600 hover:text-blue-700" />
+  </a>
+)}
+{userData.social.facebook && (
+  <a href={userData.social.facebook} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <FaFacebook className="text-3xl text-blue-500 hover:text-blue-600" />
+  </a>
+)}
+{userData.social.twitter && (
+  <a href={userData.social.twitter} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <FaTwitter className="text-3xl text-blue-400 hover:text-blue-500" />
+  </a>
+)}
+{userData.social.github && (
+  <a href={userData.social.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <FaGithub className="text-3xl text-blue-400 hover:text-blue-500" />
+  </a>
+)}
+{userData.social.website && (
+  <a href={userData.social.website} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <FaGlobe className="text-3xl text-blue-400 hover:text-blue-500" />
+  </a>
+)}
 
-            { userData.social.github && <a href={userData.social.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                <FaGithub className="text-3xl text-blue-400 hover:text-blue-500" />
-              </a>}
-
-              {userData.social.websit && <a href={userData.social.website} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                <FaGlobe className="text-3xl text-blue-400 hover:text-blue-500" />
-              </a>}
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-  
 };
 
 export default BusinessCard;
