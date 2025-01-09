@@ -78,7 +78,7 @@ export const users = {
     email: "deborahomolara17@gmail.com",
     address: "25, Oke Isagun, Ipaja, Lagos State",
     summary: "We are specialized in delivering quality bedsheets, duvets, throw pillows, bed toppers, and interior decorations.",
-    profilePic: DuvetLanePic, // Add the path to the profile picture here
+    profilePic: "", // Add the path to the profile picture here
     company: "Duvet Lane",
     profession: "An entrepreneur",
     social: {
