@@ -147,7 +147,7 @@ export const users = {
   },
   'Saheed_Sunday': {
     name: "Saheed Sunday",
-    nickname: "",  // Left empty as no nickname was provided
+    nickname: "Poet",  // Left empty as no nickname was provided
     phone: "+2348086558159",
     email: "sundaysaheed30@gmail.com",
     address: "Olaniyi Street, Igando, Lagos State",
