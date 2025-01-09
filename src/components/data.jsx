@@ -3,7 +3,7 @@ import AduniPic from "../assets/comfor_olafare.jpeg";
 import mag from "../assets/mag.jpg";
 import GlobalTemaPic from "../assets/GlobalTema.jpg";
 import SmartDimejiPic from "../assets/SMART_DIMEJI.jpg";
-import EasyTempoPic from "../assets/EasyTempo.jpg";
+import EasyTempoPic from "../assets/EasyTemo.jpg";
 
 
 
@@ -139,10 +139,5 @@ export const users = {
         tiktok: "https://www.tiktok.com/@easy_tempo1?_t=ZM-8stwj7MvQhy&_r=1"
     }
 }
-
-
-
-
-
   // Add more users as needed
 };
