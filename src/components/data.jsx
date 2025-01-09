@@ -4,6 +4,13 @@ import mag from "../assets/mag.jpg";
 import GlobalTemaPic from "../assets/GlobalTema.jpg";
 import SmartDimejiPic from "../assets/SMART_DIMEJI.jpg";
 import EasyTempoPic from "../assets/EasyTemo.jpg";
+import Saheed_Sunday from "../assets/SaheedSunday.jpg"
+import DuvetLane from "../assets/DuvetLane.jpg"
+import SarahDpoet from "../assets/SarahDpoet.jpg"
+
+
+
+
 
 export const users = {
   'TheAdunni': {
@@ -67,14 +74,14 @@ export const users = {
       website: "https://new-portfolio-nu-six-43.vercel.app"
     }
   },
-  'DuvetLane': {
+  'Duvet_Lane': {
     name: "Alabi Deborah",
     nickname: "Duvet Lane",
     phone: "08024578270",
     email: "deborahomolara17@gmail.com",
     address: "25, Oke Isagun, Ipaja, Lagos State",
     summary: "We are specialized in delivering quality bedsheets, duvets, throw pillows, bed toppers, and interior decorations.",
-    profilePic: "", // Add actual path when available
+    profilePic: DuvetLane, // Add actual path when available
     companies: ["Duvet Lane"], // Converted from single company to array
     professions: ["Entrepreneur"], // Converted from single profession to array
     social: {
@@ -137,5 +144,78 @@ export const users = {
       twitter: "https://x.com/Easy_Tempo1?t=V2GldldpPunKswI2ppNsRw&s=09",
       website: "" // Added empty website field for consistency
     }
-  }
+  },
+  'Saheed_Sunday': {
+    name: "Saheed Sunday",
+    nickname: "",  // Left empty as no nickname was provided
+    phone: "+2348086558159",
+    email: "sundaysaheed30@gmail.com",
+    address: "Olaniyi Street, Igando, Lagos State",
+    summary: "I am a professional spoken-word artiste and a ghostwriter. My services can be employed either for your events or for your articles and books.",
+    profilePic: Saheed_Sunday,  // Assuming you'll need to provide the actual image
+    companies: [
+      // Left as empty array since no company was specified
+    ],
+    professions: [
+      "Spoken Word Artist",
+      "Ghostwriter",
+      "Professional Writer"
+    ],
+    social: {
+      instagram: "https://www.instagram.com/_saheedsunday?igsh=MWRqMmFpZGpvM284bg%3D%3D&utm_source=qr",
+      facebook: "https://www.facebook.com/share/1AzooXkTYi/?mibextid=LQQJ4d",
+      twitter: "https://x.com/saheedtsunday?s=21",
+      linkedin: "https://www.linkedin.com/in/saheed-sunday-3261562bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      github: "",  // Left empty as no GitHub was provided
+      website: "linkfly.to/sundaysaheed"
+    }
+},
+'Sarah_Dpoet': {
+   name: "Odeshile Sarah Olubunmi",
+   nickname: "Sarah dpoet",
+   phone: ["+2348143481677", "+2349043505719"],
+   email: "odesilesarah@gmail.com",
+   address: "Igbo Elerin, Ojo, Lagos State",
+   summary: "A multi-talented professional offering services as a Spoken Word Artist, Public Speaker, Educator, Call Representative, Voice Over Artist, Virtual Assistant and Writer.",
+   profilePic: SarahDpoet,  // Assuming you'll need to provide the actual image
+   companies: [
+     // Left as empty array since no company was specified
+   ],
+   professions: [
+     "Educator",
+     "Writer",
+     "Virtual Assistant",
+     "Spoken Word Artist",
+     "Public Speaker", 
+     "Call Representative",
+     "Voice Over Artist"
+   ],
+   social: {
+     instagram: "https://www.instagram.com/sarah.dpoet?igsh=cmFvcms1c2FvazV5",
+     facebook: "https://www.facebook.com/saraholubunmi.odesile",
+     // Left empty as no website was provided
+     tiktok: "https://www.tiktok.com/@sarah.dpoet?_t=ZM-8svevJnJ8Eg&_r=1"  // Added TikTok since it was provided
+   }
+},
+'hireti': {
+   name: "Comfort Fasusi",
+   nickname: "hireti",
+   phone: "+2349034776241",
+   email: "irethriftywears@gmail.com",
+   address: "97, One Love Unity Estate, Church Gate, Lagos State",
+   summary: "Where fashion meets affordability",
+   profilePic: "",  // Assuming you'll need to provide the actual image
+   companies: [
+     "irethriftywears"
+   ],
+   professions: [
+     "Fashion Retailer",
+     "Thrift Store Owner",
+     "Clothing Merchant"
+   ],
+   social: {
+     facebook: "https://www.facebook.com/profile.php?id=61570502046216&mibextid=rS40aB7S9Ucbxw6v",
+     tiktok: "https://www.tiktok.com/@ire.thrifty.wears?_t=ZM-8svdYA7RjjK&_r=1"
+   }
+}
 };

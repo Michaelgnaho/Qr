@@ -90,7 +90,7 @@
 import React from 'react'; 
 import { useParams } from 'react-router-dom';
 import { users } from './data';
-import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaGlobe, FaGithub, FaShare, FaSave } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaGlobe, FaGithub, FaShare, FaSave, FaTiktok } from 'react-icons/fa';
 
 const BusinessCard = () => {
   const { username } = useParams();
@@ -299,6 +299,11 @@ END:VCARD`;
 {userData.social.twitter && (
   <a href={userData.social.twitter} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
     <FaTwitter className="text-3xl text-blue-400 hover:text-blue-500" />
+  </a>
+)}
+{userData.social.tiktok && (
+  <a href={userData.social.tiktok} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <FaTiktok className="text-3xl text-blue-500 hover:text-blue-600" />
   </a>
 )}
 {userData.social.github && (
