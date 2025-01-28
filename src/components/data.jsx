@@ -36,10 +36,10 @@ export const users = {
       "Community Developer",
     ],
     social: {
-      instagram: "https://instagram.com/theadunni",
-      linkedin: "https://linkedin.com/in/theadunni",
-      facebook: "https://facebook.com/theadunni",
-      twitter: "https://twitter.com/theadunni",
+      instagram: "https://www.instagram.com/theadunni_comfort_olafare/",
+      linkedin: "https://www.linkedin.com/in/comfort-olafare/",
+      facebook: "https://web.facebook.com/olafare.comfort",
+      twitter: "https://x.com/ComfortOlafare",
     },
   },
   "M.A.G": {
