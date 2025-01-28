@@ -1,5 +1,5 @@
 // Import the image properly
-import AduniPic from "../assets/comfor_olafare.jpeg";
+import AduniPic from "../assets/comfor_olafare.jpg";
 import mag from "../assets/mag.jpg";
 import GlobalTemaPic from "../assets/GlobalTema.jpg";
 import SmartDimejiPic from "../assets/SMART_DIMEJI.jpg";
@@ -10,7 +10,7 @@ import SarahDpoet from "../assets/SarahDpoet.jpg";
 import Wordsmith_Extraordinaire from "../assets/Wordsmith_Extraordinaire.jpg";
 
 export const users = {
-  TheAdunni: {
+  The_Adunni: {
     name: "SEN. OLAFARE COMFORT OLADUNNI",
     nickname: "TheAdunni",
     phone: "07013805937",
