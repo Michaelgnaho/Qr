@@ -8,6 +8,8 @@ import Saheed_Sunday from "../assets/SaheedSunday.jpg";
 import DuvetLane from "../assets/DuvetLane.jpg";
 import SarahDpoet from "../assets/SarahDpoet.jpg";
 import Wordsmith_Extraordinaire from "../assets/Wordsmith_Extraordinaire.jpg";
+import EcstasyPic from "../assets/EcstasyPic.jpg";
+import grr from "../assets/grr.jpg";
 
 export const users = {
   The_Adunni: {
@@ -259,6 +261,44 @@ export const users = {
       facebook: "https://www.facebook.com/miracle.anthony.7796420",
       linkedin: "https://www.linkedin.com/in/miracle-asikaburu-121a40261",
       website: "", // Left empty as no website was provided
+    },
+  },
+  Ecstasy: {
+    name: "ESTHER JOSEPH AYOMIDE",
+    nickname: "ECSTASY",
+    phone: "09125248242",
+    email: "ayomiejoseph2012@gmail.com",
+    address: "LASU OJO",
+    summary:
+      "Multifaceted professional with expertise in events planning and entrepreneurship, driven by innovation and excellence",
+    profilePic: EcstasyPic,
+    companies: ["ECSTASY EVENTS AND ENTERPRISE"],
+    professions: ["Events Planner", "Entrepreneur"],
+    social: {
+      instagram: "https://www.instagram.com/estherjosephayomide",
+      facebook: "https://www.facebook.com/profile.php?id=61554193228412",
+      tiktok: "https://vm.tiktok.com/ZMkXK2Rqd/",
+    },
+  },
+  Sir_Graciano: {
+    name: "GRACIANO ENWEREM",
+    nickname: "Sir Grrraciano",
+    phone: "+2348060878235",
+    email: "grrraciano@gmail.com",
+    address: "8 Miniboruta Close, Rumukalagbor",
+    summary: "We Write, We Create, We Brand, We Publish & Promote.",
+    profilePic: grr,
+
+    website: "theeclipseevent.com",
+
+    companies: ["CEO, The Eclipse Theatre"],
+    professions: ["Poet", "Writer", "Lecturer", "Food Business Enthusiast"],
+    social: {
+      instagram: "https://www.instagram.com/gracianoenwerem",
+      linkedin: "https://www.linkedin.com/in/graciano-enwerem-62a199b8",
+      facebook: "https://www.facebook.com/graciano1000",
+      twitter: "https://x.com/GracianoEnwerem",
+      website: "http://ww2.theeclipseevent.com/lander",
     },
   },
 };
