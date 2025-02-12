@@ -305,7 +305,7 @@ export const users = {
   Empress_Abby: {
     name: "Dudu Abiola Toritsesemumi",
     nickname: "Empress Abby",
-    phone: ["+2348020878921", "+2348082401581"],
+    phone: "+2348020878921" || "+2348082401581",
     email: "abioladudu58@gmail.com",
     address: "Nigeria", // Added based on context, can be updated if needed
     summary:
