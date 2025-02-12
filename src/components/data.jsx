@@ -10,6 +10,7 @@ import SarahDpoet from "../assets/SarahDpoet.jpg";
 import Wordsmith_Extraordinaire from "../assets/Wordsmith_Extraordinaire.jpg";
 import EcstasyPic from "../assets/EcstasyPic.jpg";
 import grr from "../assets/grr.jpg";
+import ab from "../assets/ab.jpg";
 
 export const users = {
   The_Adunni: {
@@ -299,6 +300,33 @@ export const users = {
       facebook: "https://www.facebook.com/graciano1000",
       twitter: "https://x.com/GracianoEnwerem",
       website: "http://ww2.theeclipseevent.com/lander",
+    },
+  },
+  Empress_Abby: {
+    name: "Dudu Abiola Toritsesemumi",
+    nickname: "Empress Abby",
+    phone: ["+2348020878921", "+2348082401581"],
+    email: "abioladudu58@gmail.com",
+    address: "Nigeria", // Added based on context, can be updated if needed
+    summary:
+      "I'm a storyteller in every sense—through words, fashion, and experiences. As an English student and language enthusiast (currently learning French), I navigate academia with a passion for teaching and public speaking. Beyond the classroom, I curate thoughtful gifts, bring events to life with creative décor, and I'm steadily carving my place in the fashion world. When I'm not sewing or running my business, I'm writing, because words, like everything else I create, must be intentional.",
+    profilePic: ab, // Placeholder, can be updated with actual image reference
+    companies: ["DREAM"],
+    professions: [
+      "Educator",
+      "Writer",
+      "Fashion Designer",
+      "Event Decorator",
+      "Gift Curator",
+      "Public Speaker",
+      "Language Enthusiast",
+    ],
+    social: {
+      instagram: "https://www.instagram.com/abioladudu_?igsh=M2o4aTVycHIwdmpw",
+      facebook: "https://www.facebook.com/empress132?mibextid=ZbWKwL",
+      linkedin: "https://www.linkedin.com/in/abiola-dudu-a8805a2b4",
+      github: null, // Not provided in original data
+      website: null, // Not provided in original data
     },
   },
 };
