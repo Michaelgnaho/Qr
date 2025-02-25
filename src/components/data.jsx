@@ -11,7 +11,7 @@ import Wordsmith_Extraordinaire from "../assets/Wordsmith_Extraordinaire.jpg";
 import EcstasyPic from "../assets/EcstasyPic.jpg";
 import grr from "../assets/grr.jpg";
 import ab from "../assets/ab.jpg";
-
+import ashaka from "../assets/ashaka.jpg";
 export const users = {
   The_Adunni: {
     name: "SEN. OLAFARE COMFORT OLADUNNI",
@@ -327,6 +327,38 @@ export const users = {
       linkedin: "https://www.linkedin.com/in/abiola-dudu-a8805a2b4",
       github: null, // Not provided in original data
       website: null, // Not provided in original data
+    },
+  },
+
+  A_shaker: {
+    name: "Victory Ashaka",
+    nickname: "A-shaker",
+    phone: "+2348106021839",
+    email: "Hello@victoryashaka.com",
+    address: "Lagos, Nigeria",
+    summary:
+      "Victory Ashaka is an award-winning spoken word poet, youth advisor to the European Union, Lagos state youth ambassador, climate leader, poetry slam champion, global youth ambassador of Theirworld and a member of the young people's action team of UNICEF Generation Unlimited. Victory is a graduate of English Literature from Lagos State University and a certified leadership fellow from the Management Institute of Finland in Helsinki. He is a 2024 Diana Award Recipient, Future Awards Africa Prize for Young Person of the Year nominee and a poet laureate featured at UNICEF, FAO, the United Nations, TEDx platforms, Italian Consulate, British Deputy High Commission and such others.",
+    profilePic: ashaka,
+    companies: [
+      "Youth Advisor to the European Union",
+      "Lagos State Youth Ambassador",
+      "Global Youth Ambassador of Theirworld",
+      "Member of UNICEF Generation Unlimited Young People's Action Team",
+    ],
+    professions: [
+      "Spoken Word Poet",
+      "Youth Advisor",
+      "Climate Leader",
+      "Poetry Slam Champion",
+      "Diana Award Recipient",
+      "Literature Graduate",
+    ],
+    social: {
+      instagram: "https://www.instagram.com/VictoryAshaka/",
+      linkedin: "http://linkedin.com/in/amb-victory-ashaka",
+      facebook: "https://www.facebook.com/Victory.Ashaka",
+      twitter: "https://x.com/victoryashaka?s=21",
+      website: "https://victoryashaka.com/",
     },
   },
 };
