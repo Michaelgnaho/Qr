@@ -12,6 +12,10 @@ import EcstasyPic from "../assets/EcstasyPic.jpg";
 import grr from "../assets/grr.jpg";
 import ab from "../assets/ab.jpg";
 import ashaka from "../assets/ashaka.jpg";
+import prolifik from "../assets/prolifik.jpg";
+import Umar from "../assets/Umar.jpg";
+import Vivian from "../assets/Vivian.jpg";
+
 export const users = {
   The_Adunni: {
     name: "SEN. OLAFARE COMFORT OLADUNNI",
@@ -361,4 +365,68 @@ export const users = {
       website: "https://victoryashaka.com/",
     },
   },
+
+  VA: {
+    name: "Vivian Okemute Adikankwu",
+    nickname: "VA - The Maven",
+    phone: "+234 802 841 8288",
+    email: "Adikankwuovivian@gmail.com",
+    jobTitle: "Group Head Human Resources",
+    companies: ["Ouranos Technologies Ltd", ],
+    professions: [
+      "HR Professional",
+      "HR Consultant",
+      "Career Coach"
+    ],
+    address: "Lagos, Nigeria",
+    website: "N/A",
+    summary: "As a seasoned HR professional with extensive experience in human capital management, I provide strategic HR leadership and consulting services that help organizations optimize their workforce. I specialize in talent acquisition, performance management, organizational development, and employee engagement strategies tailored to business objectives. As a career coach, I guide professionals through career transitions, skill development, and personal branding to achieve their professional goals. My consultative approach combines industry best practices with innovative solutions to address complex HR challenges and drive organizational success.",
+    profilePic: Vivian,
+    social: {
+      instagram: "https://www.instagram.com/vivianadikankwu?igsh=cHdqcW9ybnM1NWg5&utm_source=qr",
+      facebook: "https://www.facebook.com/share/1514ihktFh/?mibextid=wwXIfr",
+      twitter: "https://x.com/vivianadikankwu?s=21",
+      linkedin: "https://www.linkedin.com/in/vivianadikankwu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    }
+  },
+  
+  Umar: {
+    name: "Umar Rashidat Omoshola",
+    nickname: "Mrs Umar",
+    phone: "+234 802 339 4874",
+    email: "farims06@yahoo.com",
+    companies: ["Lagos State Government", ],
+    professions: ["Youth Development Practitioner","Civil Servant"],
+    address: "15, Adebayo Mokoulu street Anthony village, Lagos",
+    website: "Nil",
+    summary: "A seasoned Youth and Gender Development Executive with over 22 years of experience in youth empowerment, engagement, development, advocacy, and program management. A proactive and driven leader with a proven history of designing and executing impactful initiatives that advance youth development and gender equity. With strong analytical, organizational, and communication skills, Rashidat excels at fostering positive change and building sustainable solutions that inspire and empower young people. She is committed to leveraging her expertise to lead dynamic youth engagement programs and create lasting impact in the minds of the youth and within her network.",
+    profilePic: Umar,
+    social: {
+      instagram: "https://www.instagram.com/rashidat.o.umar?igsh=MTBkcGJmejh0eWcyNg==",
+      facebook: "https://www.facebook.com/share/17XWc4ixz8/",
+      linkedin: "https://www.linkedin.com/in/rashidat-umar-69a304224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    }
+  },
+  
+  ProlifickPen: {
+    name: "Abimbola Abdulawaris Adebayo",
+    nickname: "ProlifickPen",
+    phone: "08075463954",
+    email: "abimbolawaris18@gmail.com",
+    companies: ["Prolifick Innovations and Creativity Hub", ],
+    professions: [
+      "Multilingual Spokenword Poet",
+      "Voiceover Artist",
+      "House Painting and Interior Decorations"
+    ],
+    address: "Lagos, Nigeria",
+    website: "NiL",
+    summary: "Abimbola Abdulawaris Adebayo, known as ProlifickPen, is a dynamic and versatile professional with a passion for creativity and expression. As a multilingual spoken word poet, he captivates audiences with his powerful and evocative performances. His talents extend to voiceover artistry, where he brings scripts to life with his distinctive voice. Additionally, Abimbola is skilled in house painting and interior decorations, showcasing his artistic flair in transforming spaces. Through his company, Prolifick Innovations and Creativity Hub, he continues to inspire and innovate, leaving a lasting impact in the realms of art, culture, and design.",
+    profilePic: prolifik,
+    social: {
+      instagram: "https://www.instagram.com/the_prolifick.pen?igsh=anJ0ZWZnaWdhc2c2",
+      facebook: "https://www.facebook.com/abdulwahreez",
+      tiktok: "https://www.tiktok.com/@the_prolifick.pen?_t=ZM-8uUIoiuG195&_r=1"
+    }
+  }
 };
