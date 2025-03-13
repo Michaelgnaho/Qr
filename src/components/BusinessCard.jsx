@@ -1,5 +1,6 @@
 
-
+import React from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { users } from "./data";
 import { motion, AnimatePresence } from "framer-motion";
@@ -139,7 +140,7 @@ const BusinessCard = () => {
 
   const generateVCard = (userData, displayName) => {
     const social = Object.entries(userData.social)
-      .filter(([_, value]) => value)
+      .filter(([, value]) => value)
       .map(([platform, value]) => `X-SOCIALPROFILE;TYPE=${platform}:${value}`)
       .join("\n");
 
