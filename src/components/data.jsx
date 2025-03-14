@@ -14,7 +14,7 @@ import ab from "../assets/ab.jpg";
 import ashaka from "../assets/ashaka.jpg";
 import prolifik from "../assets/prolifik.jpg";
 import Umar from "../assets/Umar.jpg";
-import Vivian from "../assets/Vivian.jpg";
+import Vivian from "../assets/vivi.jpg";
 
 export const users = {
   The_Adunni: {
@@ -372,15 +372,15 @@ export const users = {
     phone: "+234 802 841 8288",
     email: "Adikankwuovivian@gmail.com",
     jobTitle: "Group Head Human Resources",
-    companies: ["Ouranos Technologies Ltd", ],
+    companies: ["Devien Consult Ltd, CEO/Lead consultant","⁠Ouranos Technologies Ltd, Group Head, Human Resources" ],
     professions: [
-      "HR Professional",
+      "Senior HR Professional",
       "HR Consultant",
       "Career Coach"
     ],
     address: "Lagos, Nigeria",
     website: "N/A",
-    summary: "As the CEO and Lead Consultant of Devien Consult Ltd, Vivian Adikankwu provides expert HR consulting services to businesses, focusing on HR structure development, talent management, and productivity strategies that drive business profitability. She also offers strategic HR policies, recruitment and selection services, and end-to-end HR outsourcing solutions.As a Certified Career Coach, Vivian empowers professionals and job seekers with career development strategies. Through career coaching, CV writing, LinkedIn optimization, and interview coaching, she helps individuals secure their dream jobs and advance in their careers. She is also the Lead Facilitator of the Devien HR Academy, where she trains aspiring HR professionals and business owners on mastering HR management and workforce optimization. For businesses and individuals looking to elevate their HR and career success, Vivian Adikankwu is the go-to expert",
+    summary:["Vivian O. Adikankwu is a dynamic HR leader, consultant, and certified career coach dedicated to driving business success through strategic HR solutions. With expertise in HR structure development, talent management, and productivity strategies, she helps businesses optimize their workforce and boost profitability. She also provides strategic HR policies, recruitment, and end-to-end HR outsourcing services.", "As a Certified Career Coach, Vivian empowers professionals and job seekers through career coaching, CV writing, LinkedIn optimization, and interview coaching, equipping them with the tools to secure their dream jobs and advance their careers.", "She is also the Lead Facilitator of Devien HR Academy, where she trains aspiring HR professionals and business owners on mastering HR management and workforce optimization.", "For businesses and professionals seeking expert HR solutions or career growth strategies, Vivian Adikankwu is the go-to expert."],
     profilePic: Vivian,
     social: {
       instagram: "https://www.instagram.com/vivianadikankwu?igsh=cHdqcW9ybnM1NWg5&utm_source=qr",

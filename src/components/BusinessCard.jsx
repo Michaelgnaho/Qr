@@ -350,9 +350,27 @@ END:VCARD`;
           {/* Content Sections */}
           <AnimatePresence>
             {[
-              {
+               {
                 title: "About Me",
-                content: userData.summary,
+                content: (
+                  <div className="space-y-4">
+                    {Array.isArray(userData.summary) ? (
+                      userData.summary.map((paragraph, index) => (
+                        <motion.p 
+                          key={index} 
+                          className="text-gray-700"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.1 * index }}
+                        >
+                          {paragraph}
+                        </motion.p>
+                      ))
+                    ) : (
+                      <p className="text-gray-700">{userData.summary}</p>
+                    )}
+                  </div>
+                ),
               },
               {
                 title: "Contact Information",
