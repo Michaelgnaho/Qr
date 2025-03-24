@@ -15,6 +15,9 @@ import ashaka from "../assets/ashaka.jpg";
 import prolifik from "../assets/prolifik.jpg";
 import Umar from "../assets/Umar.jpg";
 import Vivian from "../assets/vivi.jpg";
+import jay from "../assets/jay.jpg";
+import aina from "../assets/aina.jpg";
+
 
 export const users = {
   The_Adunni: {
@@ -449,7 +452,7 @@ export const users = {
       "Jay specializes in creating custom spoken word pieces that resonate with event themes, providing a distinctive and impactful artistic element to gatherings.",
       "Whether for corporate events, weddings, conferences, or cultural celebrations, Jay Sukpa offers a transformative poetic experience that elevates any occasion."
     ],
-    profilePic: "N/A",
+    profilePic: jay,
     social: {
       instagram: "https://www.instagram.com/thejaysukpa",
       facebook: "https://www.facebook.com/profile.php?id=100074922635682",
@@ -481,7 +484,7 @@ export const users = {
       "Her work spans multiple domains, combining educational expertise with creative communication to inspire and transform perspectives.",
       "Through spoken word poetry, Ayomide creates powerful narratives that challenge, motivate, and connect with diverse audiences across various platforms."
     ],
-    profilePic: "N/A",
+    profilePic: aina,
     social: {
       instagram: "https://www.instagram.com/a__ayomide?igsh=MTlwcDU2aWIybno0Yg==",
       linkedin: "https://www.linkedin.com/in/amb-aina-ayomide-k-communications-education-leadership-893a66209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
