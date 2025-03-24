@@ -428,5 +428,65 @@ export const users = {
       facebook: "https://www.facebook.com/abdulwahreez",
       tiktok: "https://www.tiktok.com/@the_prolifick.pen?_t=ZM-8uUIoiuG195&_r=1"
     }
-  }
+  },
+  Jay_sukpa: {
+    name: "Jacob Sukpa",
+    nickname: "Jay Sukpa",
+    phone: "+234 902 248 9284, +234 903 788 1792",
+    email: "jsukpa@gmail.com",
+    jobTitle: "Spoken Word Poet",
+    companies: [],
+    professions: [
+      "Spoken Word Poet",
+      "Performance Artist",
+      "Word Craftsman"
+    ],
+    address: "Nigeria",
+    website: "N/A",
+    summary: [
+      "Jay Sukpa is a passionate spoken word poet who brings high-value words to high-profile events. With a unique ability to craft and deliver powerful spoken word performances, he transforms events through the art of poetry.",
+      "His performances are designed to inspire, provoke thought, and create memorable moments through the power of carefully chosen words and dynamic delivery.",
+      "Jay specializes in creating custom spoken word pieces that resonate with event themes, providing a distinctive and impactful artistic element to gatherings.",
+      "Whether for corporate events, weddings, conferences, or cultural celebrations, Jay Sukpa offers a transformative poetic experience that elevates any occasion."
+    ],
+    profilePic: "N/A",
+    social: {
+      instagram: "https://www.instagram.com/thejaysukpa",
+      facebook: "https://www.facebook.com/profile.php?id=100074922635682",
+      twitter: "N/A",
+      linkedin: "N/A"
+    }
+  },
+  Aina_ayomide: {
+    name: "Amb. Aina Ayomide",
+    nickname: "Aina Ayomide is my name and I'm a spoken word poet",
+    phone: "+234 901 923 2774",
+    email: "aayinkeayomideaina@gmail.com",
+    jobTitle: "Social Entrepreneur, Educator, Spoken Word Poet",
+    companies: [
+      "Ministry of Youths & Social Development"
+    ],
+    professions: [
+      "Social Entrepreneur",
+      "Educator",
+      "Spoken Word Poet",
+      "Communicator",
+      "Leadership Specialist"
+    ],
+    address: "Lagos, Nigeria",
+    website: "N/A",
+    summary: [
+      "Amb. Aina Ayomide is a multifaceted professional dedicated to social development, education, and artistic expression through spoken word poetry.",
+      "As a social entrepreneur, she leverages her skills in communication and leadership to drive positive change and empower youth in her community.",
+      "Her work spans multiple domains, combining educational expertise with creative communication to inspire and transform perspectives.",
+      "Through spoken word poetry, Ayomide creates powerful narratives that challenge, motivate, and connect with diverse audiences across various platforms."
+    ],
+    profilePic: "N/A",
+    social: {
+      instagram: "https://www.instagram.com/a__ayomide?igsh=MTlwcDU2aWIybno0Yg==",
+      linkedin: "https://www.linkedin.com/in/amb-aina-ayomide-k-communications-education-leadership-893a66209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      twitter: "N/A",
+      facebook: "N/A"
+    }
+  },
 };
