@@ -456,8 +456,7 @@ export const users = {
     social: {
       instagram: "https://www.instagram.com/thejaysukpa",
       facebook: "https://www.facebook.com/profile.php?id=100074922635682",
-      twitter: "N/A",
-      linkedin: "N/A"
+      
     }
   },
   Aina_ayomide: {
@@ -488,8 +487,7 @@ export const users = {
     social: {
       instagram: "https://www.instagram.com/a__ayomide?igsh=MTlwcDU2aWIybno0Yg==",
       linkedin: "https://www.linkedin.com/in/amb-aina-ayomide-k-communications-education-leadership-893a66209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      twitter: "N/A",
-      facebook: "N/A"
+   
     }
   },
 };
