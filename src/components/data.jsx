@@ -17,7 +17,7 @@ import Umar from "../assets/Umar.jpg";
 import Vivian from "../assets/vivi.jpg";
 import jay from "../assets/jay.jpg";
 import aina from "../assets/aina.jpg";
-
+import RheefahPic from "../assets/Rheefah.jpg";
 
 export const users = {
   The_Adunni: {
@@ -312,6 +312,7 @@ export const users = {
   Empress_Abby: {
     name: "Dudu Abiola Toritsesemumi",
     nickname: "Empress Abby",
+    // eslint-disable-next-line no-constant-binary-expression
     phone: "+2348020878921" || "+2348082401581",
     email: "abioladudu58@gmail.com",
     address: "Nigeria", // Added based on context, can be updated if needed
@@ -375,62 +376,74 @@ export const users = {
     phone: "+234 802 841 8288",
     email: "Adikankwuovivian@gmail.com",
     jobTitle: "Group Head Human Resources",
-    companies: ["Devien Consult Ltd, CEO/Lead consultant","⁠Ouranos Technologies Ltd, Group Head, Human Resources" ],
-    professions: [
-      "Senior HR Professional",
-      "HR Consultant",
-      "Career Coach"
+    companies: [
+      "Devien Consult Ltd, CEO/Lead consultant",
+      "⁠Ouranos Technologies Ltd, Group Head, Human Resources",
     ],
+    professions: ["Senior HR Professional", "HR Consultant", "Career Coach"],
     address: "Lagos, Nigeria",
     website: "N/A",
-    summary:["Vivian O. Adikankwu is a dynamic HR leader, consultant, and certified career coach dedicated to driving business success through strategic HR solutions. With expertise in HR structure development, talent management, and productivity strategies, she helps businesses optimize their workforce and boost profitability. She also provides strategic HR policies, recruitment, and end-to-end HR outsourcing services.", "As a Certified Career Coach, Vivian empowers professionals and job seekers through career coaching, CV writing, LinkedIn optimization, and interview coaching, equipping them with the tools to secure their dream jobs and advance their careers.", "She is also the Lead Facilitator of Devien HR Academy, where she trains aspiring HR professionals and business owners on mastering HR management and workforce optimization.", "For businesses and professionals seeking expert HR solutions or career growth strategies, Vivian Adikankwu is the go-to expert."],
+    summary: [
+      "Vivian O. Adikankwu is a dynamic HR leader, consultant, and certified career coach dedicated to driving business success through strategic HR solutions. With expertise in HR structure development, talent management, and productivity strategies, she helps businesses optimize their workforce and boost profitability. She also provides strategic HR policies, recruitment, and end-to-end HR outsourcing services.",
+      "As a Certified Career Coach, Vivian empowers professionals and job seekers through career coaching, CV writing, LinkedIn optimization, and interview coaching, equipping them with the tools to secure their dream jobs and advance their careers.",
+      "She is also the Lead Facilitator of Devien HR Academy, where she trains aspiring HR professionals and business owners on mastering HR management and workforce optimization.",
+      "For businesses and professionals seeking expert HR solutions or career growth strategies, Vivian Adikankwu is the go-to expert.",
+    ],
     profilePic: Vivian,
     social: {
-      instagram: "https://www.instagram.com/vivianadikankwu?igsh=cHdqcW9ybnM1NWg5&utm_source=qr",
+      instagram:
+        "https://www.instagram.com/vivianadikankwu?igsh=cHdqcW9ybnM1NWg5&utm_source=qr",
       facebook: "https://www.facebook.com/share/1514ihktFh/?mibextid=wwXIfr",
       twitter: "https://x.com/vivianadikankwu?s=21",
-      linkedin: "https://www.linkedin.com/in/vivianadikankwu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-    }
+      linkedin:
+        "https://www.linkedin.com/in/vivianadikankwu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
   },
-  
+
   Umar: {
     name: "Umar Rashidat Omoshola",
     nickname: "Mrs Umar",
     phone: "+234 802 339 4874",
     email: "farims06@yahoo.com",
-    companies: ["Lagos State Government", ],
-    professions: ["Youth Development Practitioner","Civil Servant"],
+    companies: ["Lagos State Government"],
+    professions: ["Youth Development Practitioner", "Civil Servant"],
     address: "15, Adebayo Mokoulu street Anthony village, Lagos",
     website: "Nil",
-    summary: "A seasoned Youth and Gender Development Executive with over 22 years of experience in youth empowerment, engagement, development, advocacy, and program management. A proactive and driven leader with a proven history of designing and executing impactful initiatives that advance youth development and gender equity. With strong analytical, organizational, and communication skills, Rashidat excels at fostering positive change and building sustainable solutions that inspire and empower young people. She is committed to leveraging her expertise to lead dynamic youth engagement programs and create lasting impact in the minds of the youth and within her network.",
+    summary:
+      "A seasoned Youth and Gender Development Executive with over 22 years of experience in youth empowerment, engagement, development, advocacy, and program management. A proactive and driven leader with a proven history of designing and executing impactful initiatives that advance youth development and gender equity. With strong analytical, organizational, and communication skills, Rashidat excels at fostering positive change and building sustainable solutions that inspire and empower young people. She is committed to leveraging her expertise to lead dynamic youth engagement programs and create lasting impact in the minds of the youth and within her network.",
     profilePic: Umar,
     social: {
-      instagram: "https://www.instagram.com/rashidat.o.umar?igsh=MTBkcGJmejh0eWcyNg==",
+      instagram:
+        "https://www.instagram.com/rashidat.o.umar?igsh=MTBkcGJmejh0eWcyNg==",
       facebook: "https://www.facebook.com/share/17XWc4ixz8/",
-      linkedin: "https://www.linkedin.com/in/rashidat-umar-69a304224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-    }
+      linkedin:
+        "https://www.linkedin.com/in/rashidat-umar-69a304224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
   },
-  
+
   ProlifickPen: {
     name: "Abimbola Abdulawaris Adebayo",
     nickname: "ProlifickPen",
     phone: "08075463954",
     email: "abimbolawaris18@gmail.com",
-    companies: ["Prolifick Innovations and Creativity Hub", ],
+    companies: ["Prolifick Innovations and Creativity Hub"],
     professions: [
       "Multilingual Spokenword Poet",
       "Voiceover Artist",
-      "House Painting and Interior Decorations"
+      "House Painting and Interior Decorations",
     ],
     address: "Lagos, Nigeria",
     website: "NiL",
-    summary: "Abimbola Abdulawaris Adebayo, known as ProlifickPen, is a dynamic and versatile professional with a passion for creativity and expression. As a multilingual spoken word poet, he captivates audiences with his powerful and evocative performances. His talents extend to voiceover artistry, where he brings scripts to life with his distinctive voice. Additionally, Abimbola is skilled in house painting and interior decorations, showcasing his artistic flair in transforming spaces. Through his company, Prolifick Innovations and Creativity Hub, he continues to inspire and innovate, leaving a lasting impact in the realms of art, culture, and design.",
+    summary:
+      "Abimbola Abdulawaris Adebayo, known as ProlifickPen, is a dynamic and versatile professional with a passion for creativity and expression. As a multilingual spoken word poet, he captivates audiences with his powerful and evocative performances. His talents extend to voiceover artistry, where he brings scripts to life with his distinctive voice. Additionally, Abimbola is skilled in house painting and interior decorations, showcasing his artistic flair in transforming spaces. Through his company, Prolifick Innovations and Creativity Hub, he continues to inspire and innovate, leaving a lasting impact in the realms of art, culture, and design.",
     profilePic: prolifik,
     social: {
-      instagram: "https://www.instagram.com/the_prolifick.pen?igsh=anJ0ZWZnaWdhc2c2",
+      instagram:
+        "https://www.instagram.com/the_prolifick.pen?igsh=anJ0ZWZnaWdhc2c2",
       facebook: "https://www.facebook.com/abdulwahreez",
-      tiktok: "https://www.tiktok.com/@the_prolifick.pen?_t=ZM-8uUIoiuG195&_r=1"
-    }
+      tiktok:
+        "https://www.tiktok.com/@the_prolifick.pen?_t=ZM-8uUIoiuG195&_r=1",
+    },
   },
   Jay_sukpa: {
     name: "Jacob Sukpa",
@@ -439,25 +452,20 @@ export const users = {
     email: "jsukpa@gmail.com",
     jobTitle: "Spoken Word Poet",
     companies: [],
-    professions: [
-      "Spoken Word Poet",
-      "Performance Artist",
-      "Word Craftsman"
-    ],
+    professions: ["Spoken Word Poet", "Performance Artist", "Word Craftsman"],
     address: "Nigeria",
     website: "N/A",
     summary: [
       "Jay Sukpa is a passionate spoken word poet who brings high-value words to high-profile events. With a unique ability to craft and deliver powerful spoken word performances, he transforms events through the art of poetry.",
       "His performances are designed to inspire, provoke thought, and create memorable moments through the power of carefully chosen words and dynamic delivery.",
       "Jay specializes in creating custom spoken word pieces that resonate with event themes, providing a distinctive and impactful artistic element to gatherings.",
-      "Whether for corporate events, weddings, conferences, or cultural celebrations, Jay Sukpa offers a transformative poetic experience that elevates any occasion."
+      "Whether for corporate events, weddings, conferences, or cultural celebrations, Jay Sukpa offers a transformative poetic experience that elevates any occasion.",
     ],
     profilePic: jay,
     social: {
       instagram: "https://www.instagram.com/thejaysukpa",
       facebook: "https://www.facebook.com/profile.php?id=100074922635682",
-      
-    }
+    },
   },
   Aina_ayomide: {
     name: "Amb. Aina Ayomide",
@@ -465,15 +473,13 @@ export const users = {
     phone: "+234 901 923 2774",
     email: "aayinkeayomideaina@gmail.com",
     jobTitle: "Social Entrepreneur, Educator, Spoken Word Poet",
-    companies: [
-      "Ministry of Youths & Social Development"
-    ],
+    companies: ["Ministry of Youths & Social Development"],
     professions: [
       "Social Entrepreneur",
       "Educator",
       "Spoken Word Poet",
       "Communicator",
-      "Leadership Specialist"
+      "Leadership Specialist",
     ],
     address: "Lagos, Nigeria",
     website: "N/A",
@@ -481,13 +487,40 @@ export const users = {
       "Amb. Aina Ayomide is a multifaceted professional dedicated to social development, education, and artistic expression through spoken word poetry.",
       "As a social entrepreneur, she leverages her skills in communication and leadership to drive positive change and empower youth in her community.",
       "Her work spans multiple domains, combining educational expertise with creative communication to inspire and transform perspectives.",
-      "Through spoken word poetry, Ayomide creates powerful narratives that challenge, motivate, and connect with diverse audiences across various platforms."
+      "Through spoken word poetry, Ayomide creates powerful narratives that challenge, motivate, and connect with diverse audiences across various platforms.",
     ],
     profilePic: aina,
     social: {
-      instagram: "https://www.instagram.com/a__ayomide?igsh=MTlwcDU2aWIybno0Yg==",
-      linkedin: "https://www.linkedin.com/in/amb-aina-ayomide-k-communications-education-leadership-893a66209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-   
-    }
+      instagram:
+        "https://www.instagram.com/a__ayomide?igsh=MTlwcDU2aWIybno0Yg==",
+      linkedin:
+        "https://www.linkedin.com/in/amb-aina-ayomide-k-communications-education-leadership-893a66209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
+  },
+  rheefah: {
+    name: "Sherifat Umar",
+    nickname: "Rheefah; The Creative Hijabi",
+    phone: "07046740471",
+    email: "Sherifatumar119@gmail.com",
+    address: "24, Ogunleye Street, PPL, LASU, Lagos State",
+    summary:
+      "I provide professional social media management, creative videography and editing, impactful graphics design, and tailored content strategies to help brands grow, engage, and thrive online.",
+    profilePic: RheefahPic, // replace with actual portrait profile picture variable or URL
+    companies: ["Independent Creative Professional"],
+    professions: [
+      "Social Media Manager",
+      "Videographer & Editor",
+      "Graphics Designer",
+      "Content Creator",
+      "Content Strategist",
+      "Content Writer",
+      "Social Media Strategist",
+      "Audience Engagement & Growth Specialist",
+    ],
+    social: {
+      instagram:
+        "https://www.instagram.com/rheefah_thecreativehijabi?igsh=N2F4c2FpMmFsc2V6&utm_source=qr",
+      tiktok: "https://www.tiktok.com/@rheefah__?_t=ZM-8zPWxJ9aOr0&_r=1",
+    },
   },
 };
