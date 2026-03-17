@@ -271,16 +271,16 @@ export const users = {
       website: "", // Left empty as no website was provided
     },
   },
-  Ecstasy: {
+  Esteemy: {
     name: "ESTHER JOSEPH AYOMIDE",
-    nickname: "ECSTASY",
+    nickname: "ESTEEMY",
     phone: "09125248242",
     email: "ayomiejoseph2012@gmail.com",
     address: "LASU OJO",
     summary:
       "Multifaceted professional with expertise in events planning and entrepreneurship, driven by innovation and excellence",
     profilePic: EcstasyPic,
-    companies: ["ECSTASY EVENTS AND ENTERPRISE"],
+    companies: ["ESTEEMY EVENTS AND ENCHANTMENTS"],
     professions: ["Events Planner", "Entrepreneur"],
     social: {
       instagram: "https://www.instagram.com/estherjosephayomide",
